@@ -3,10 +3,9 @@ import pytesseract
 import os
 import ast
 
-
 clear = lambda: os.system('cls' if os.name=='nt' else 'clear')
 clear()
-img = 'img1.png'
+img = 'img2.png'
 contenido = pytesseract.image_to_string(Image.open(img))
 # print contenido.splitlines()
 InfoFactura = {}
